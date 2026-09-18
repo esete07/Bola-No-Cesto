@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bola No Cesto</title>
+    <link rel="stylesheet" href="estilo.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+</head>
+<style>
+.read-more-toggle {
+    display: none;
+}
+.more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.read-more-toggle:checked ~ .more-content {
+    max-height: 500px; /* Ajuste conforme necessário */
+}
+.read-less-text {
+    display: none;
+}
+.read-more-toggle:checked ~ .read-more .read-more-text {
+    display: none;
+}
+.read-more-toggle:checked ~ .read-more .read-less-text {
+    display: inline;
+}
+</style>
+<body>
+ <header>
+        <div class="container">
+            <h1>Bola No Cesto</h1>
+            <nav class="main-nav">
+                <a href="jogos.html" class="tab-link">Jogos</a>
+                <a href="classificacao.html" class="tab-link">Classificação</a>
+                <a href="noticias.html" class="tab-link active">Notícias</a>
+                <a href="estatistica.html" class="tab-link">Estatísticas</a>
+                <a href="transferências.html" class="tab-link">Transferências</a>
+            </nav>
+        </div>
+    </header>
+<main class="container">
+<div id="noticias" class="tab-content active">
+</div>
+<br>
+            <h2 class="section-title">Últimas Notícias</h2>
+
+            <div class="grid-2cols">
+                <article class="card highlight-card">
+                    <img src="imag/nba.png" alt="Destaque NBA" class="highlight-image">
+                   <div class="highlight-content">
+            <span class="highlight-badge">DESTAQUE</span>
+            <h3 class="highlight-title">NBA anuncia mudanças nas regras para próxima temporada</h3>
+            <p class="card-text">
+                A liga norte-americana anunciou hoje uma série de mudanças nas regras que visam aumentar o ritmo do jogo e reduzir paradas. Entre as principais alterações está a redução do número de tempos técnicos por partida.
+            </p>
+            
+            <input type="checkbox" id="read-more-toggle" class="read-more-toggle">
+            <div class="more-content">
+                <p>As novas regras incluem também mudanças nas faltas ofensivas, permitindo mais fluidez no ataque. Os técnicos terão menos desafios por jogo, e a liga está testando um novo sistema de replay automatizado para certas situações.</p>
+                <p>A implementação começará na pré-temporada e os jogadores já se manifestaram sobre as mudanças, com opiniões divididas no vestiário.</p>
+            </div>
+            
+            <label for="read-more-toggle" class="read-more">
+                <span class="read-more-text">Ler mais</span>
+                <span class="read-less-text">Ler menos</span>
+                <i class="fas fa-arrow-right"></i>
+            </label>
+            
+            <div class="card-meta">
+                <i class="far fa-calendar-alt"></i> 16 de Junho, 2024
+            </div>
+        </div>
+    </article>
+
+<article class="card">
+    <img src="imag/nbb.jpg" alt="Notícia 1" class="card-image">
+    <div class="card-content">
+        <h3 class="card-title">NBB define datas para o próximo All-Star Game</h3>
+        <p class="card-text">
+            O torneio que reúne os melhores jogadores da liga brasileira será realizado em setembro, com novidades no formato que prometem agitar os fãs de basquete.
+        </p>
+        
+        <!-- Checkbox invisível para controlar o estado -->
+        <input type="checkbox" id="read-more-nbb" class="read-more-toggle">
+        
+        <!-- Conteúdo adicional que será mostrado -->
+        <div class="more-content">
+            <p>O evento acontecerá nos dias 14 e 15 de setembro no Ginásio do Ibirapuera, em São Paulo, com um formato inédito que inclui:</p>
+            <ul>
+                <li>Desafio de Três Pontos com participantes surpresa</li>
+                <li>Novo formato de jogo 4x4 misto (homens e mulheres)</li>
+                <li>Competição de enterradas com jurados convidados</li>
+                <li>Show de abertura com artistas nacionais</li>
+            </ul>
+            <p>Os ingressos começam a ser vendidos no dia 1º de agosto através do site oficial da liga.</p>
+        </div>
+        
+        <!-- Label que ativa o checkbox -->
+         <label for="read-more-nbb" class="read-more">
+            <span class="read-more-text">Ler mais</span>
+            <span class="read-less-text">Ler menos</span>
+            <i class="fas fa-arrow-right"></i>
+        </label>
+        
+        <div class="card-meta">
+            <i class="far fa-calendar-alt"></i> 15 de Junho, 2024
+        </div>
+    </div>
+</article>
+
+               <article class="card">
+               <img src="imag/brasil.png" alt="Notícia 2" class="card-image">
+               <div class="card-content">
+                    <h3 class="card-title">Seleção brasileira convocada para os Jogos Olímpicos</h3>
+                    <p class="card-text">
+                    Técnico Gustavo Conti anunciou a lista de 12 jogadores que vão representar o Brasil em Paris 2024. Veja quem são os escolhidos.
+                    </p>
+        
+                    <input type="checkbox" id="read-more-brasil" class="read-more-toggle">
+                    <div class="more-content">
+                    <p>Entre os convocados estão os jovens promissores João Pedro (Santos) e Maria Silva (Flamengo), além dos experientes Ricardo Oliveira (São Paulo) e Carla Santos (Corinthians).</p>
+                    <p>A seleção embarca no dia 20 de julho para um período de adaptação na França antes do início da competição, que começa em 26 de julho.</p>
+                <ul>
+                    <li>Marcelo Huertas</li>
+                    <li>Yago Mateus</li>
+                    <li>Raul Neto</li>
+                    <li>George de Paula</li>
+                    <li>Vitor Benite</li>
+                    <li>Leo Meindl</li>
+                    <li>Guilherme Santos</li>
+                    <li>Didi Louuzada</li>
+                    <li>Bruno Caboclo</li>
+                    <li>Cristiano felicio</li>
+                    <li>Lucas Dias</li>
+                    <li>João Marcelo “Mãozinha”</li>
+                </ul>
+              </div>
+        
+        <label for="read-more-brasil" class="read-more">
+            <span class="read-more-text">Ler mais</span>
+            <span class="read-less-text">Ler menos</span>
+            <i class="fas fa-arrow-right"></i>
+        </label>
+        
+        <div class="card-meta">
+            <i class="far fa-calendar-alt"></i> 14 de Junho, 2024
+        </div>
+    </div>
+</article>
+
+    <article class="card">
+    <img src="imag/jogador.jpeg" alt="Notícia 3" class="card-image">
+    <div class="card-content">
+        <h3 class="card-title">Novo recorde de pontos na EuroLeague</h3>
+        <p class="card-text">
+            Jogador do Real Madrid marca 52 pontos em uma única partida e entra para a história da competição europeia.
+        </p>
+        
+        <!-- Checkbox invisível para controle -->
+        <input type="checkbox" id="euroleague-toggle" class="read-more-toggle">
+        
+        <!-- Conteúdo expandível -->
+        <div class="more-content">
+            <p><strong>Luka Dončić</strong> superou o recorde anterior de 49 pontos estabelecido por Shane Larkin em 2019.</p>
+            <ul>
+                <li>20/26 de arremessos de quadra (76.9%)</li>
+                <li>7/11 de três pontos (63.6%)</li>
+                <li>5/5 de linha de lance livre</li>
+                <li>10 rebotes e 8 assistências</li>
+            </ul>
+            <p>A performance histórica aconteceu na vitória por 112-108 sobre o CSKA Moscow. Dončić recebeu o prêmio de MVP da rodada pela 5ª vez nesta temporada.</p>
+        </div>
+        
+        <!-- Botão interativo -->
+        <label for="euroleague-toggle" class="read-more">
+            <span class="read-more-text">Ler mais </span>
+            <span class="read-less-text">Ler menos </span>
+            <i class="fas fa-arrow-right"></i>
+        </label>
+        
+        <div class="card-meta">
+            <i class="far fa-calendar-alt"></i> 13 de Junho, 2024
+        </div>
+    </div>
+</article>
+<article class="card">
+    <img src="imag/finalPacer.jpg" alt="Notícia 4" class="card-image">
+    <div class="card-content">
+        <h3 class="card-title">Pacers vencem Knicks no Jogo 6 e voltam às finais da NBA 25 anos depois</h3>
+        <p class="card-text">
+            Os Indiana Pacers venceram os New York Knicks por 125-108, fechando a série em 4-2 e garantindo a presença nas finais da NBA, um feito que não alcançavam há 25 anos.
+        </p>
+        
+        <!-- Checkbox invisível para controle -->
+        <input type="checkbox" id="finalpacers-toggle" class="read-more-toggle">
+        
+        <!-- Conteúdo expandível -->
+        <div class="more-content">
+            <p>O ano 2000 marcou a última presença dos Pacers nas finais da NBA, depois de eliminar os Knicks na final Este - viria a perder a final para os Lakers. Vinte e cinco anos depois, a equipa de Indiana volta a atingir o feito, frente ao mesmo adversário, desta vez após uma vitória categórica por 125-108 no Jogo 6, e vai encontrar os Oklahoma City Thunder na final</p>
+        </div>
+        
+        <!-- Botão interativo -->
+        <label for="finalpacers-toggle" class="read-more">
+            <span class="read-more-text">Ler mais </span>
+            <span class="read-less-text">Ler menos </span>
+            <i class="fas fa-arrow-right"></i>
+        </label>
+        
+        <div class="card-meta">
+            <i class="far fa-calendar-alt"></i> 13 de Junho, 2024
+        </div>
+    </div>
+</article>
+            </div>
+        </div>
+</main>
+     <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Basquetebol Total</h3>
+                <p>Tudo sobre NBA, NBB e as principais ligas de basquete do mundo em um só lugar.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="jogos.html"><i class="fas fa-basketball-ball"></i> Jogos</a></li>
+                    <li><a href="classificacao.html"><i class="fas fa-trophy"></i> Classificação</a></li>
+                    <li><a href="noticias.html"><i class="far fa-newspaper"></i> Notícias</a></li>
+                    <li><a href="estatistica.html"><i class="fas fa-chart-bar"></i> Estatísticas</a></li>
+                    <li><a href="transferências.html"><i class="fas fa-exchange-alt"></i> Transferências</a></li>
+                </ul>
+            </div>
+                       <div class="footer-column">
+                <h3>Times</h3>
+                <ul class="footer-links">
+                    <li><a href="Times-da-NBA.html">Times da NBA</a></li>
+                    <li><a href="Times-do-NBB.html">Times do NBB</a></li>
+                    <li><a href="Times-europeus.html">Times Europeus</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Assine nossa newsletter e receba as últimas notícias do mundo do basquete diretamente no seu e-mail.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required>
+                    <button type="submit" class="btn-submit">Assinar</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Basquetebol Total. Todos os direitos reservados.</p>
+        </div>
+  </footer>
+</body>
+</html>

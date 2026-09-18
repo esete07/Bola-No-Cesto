@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bola No Cesto</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="tilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<style>
+.read-more-toggle {
+    display: none;
+}
+.more-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.read-more-toggle:checked ~ .more-content {
+    max-height: 500px; /* Ajuste conforme necessário */
+}
+.read-less-text {
+    display: none;
+}
+.read-more-toggle:checked ~ .read-more .read-more-text {
+    display: none;
+}
+.read-more-toggle:checked ~ .read-more .read-less-text {
+    display: inline;
+}
+</style>
+<body>
+ <header>
+        <div class="container">
+            <h1>Bola No Cesto</h1>
+          <nav class="main-nav">
+                <a href="jogos.html" class="tab-link">Jogos</a>
+                <a href="classificacao.html" class="tab-link">Classificação</a>
+                <a href="noticias.html" class="tab-link">Notícias</a>
+                <a href="estatistica.html" class="tab-link">Estatísticas</a>
+                <a href="transferências.html" class="tab-link active">Transferências</a>
+          </nav>
+        </div>
+    </header>
+<main class="container">
+      <div id="transferências" class="tab-content active">
+      </div> 
+      <br>
+            <h2 class="section-title">Transferências</h2>
+            
+            <div class="grid-3cols">
+           <article class="card">
+    <img src="imag/d'lo.jpg" alt="Transferência 1" class="card-image">
+    <div class="card-content">
+        <h3 class="card-title">Lakers anunciam contratação de novo armador</h3>
+        <p class="card-text">
+            Os Los Angeles Lakers anunciaram a contratação do armador D'Angelo Russell, que retorna à franquia após passagem pelo Minnesota Timberwolves.</p>
+        
+        <!-- Checkbox invisível para controle -->
+        <input type="checkbox" id="read-more-d'lo" class="read-more-toggle">
+        
+        <div class="more-content">
+            <p><strong>Detalhes da negociação:</strong></p>
+            <ul>
+                <li>Contrato de 2 anos no valor de $36 milhões</li>
+                <li>Cláusula de opção no segundo ano</li>
+                <li>Trocado por Malik Beasley e Jarred Vanderbilt</li>
+                <li>Número 1 será reativado para Russell</li>
+            </ul>
+            <p>O armador de 28 anos teve médias de 17.8 pontos e 6.2 assistências na última temporada. Esta será sua segunda passagem pelos Lakers, onde jogou entre 2015-2017.</p>
+        </div>
+        
+        <div class="card-meta">
+            <span><i class="far fa-calendar-alt"></i> 26/05/2024</span>
+            <span><i class="fas fa-exchange-alt"></i> Lakers</span>
+        </div>
+        
+        <!-- Botão interativo -->
+        <label for="read-more-d'lo" class="read-more">
+            <span class="read-more-text">Ler mais </span>
+            <span class="read-less-text">Ler menos </span>
+            <i class="fas fa-arrow-right"></i>
+        </label>
+    </div>
+</article>
+                
+                <article class="card">
+                    <img src="imag/mDelia.jpeg" alt="Transferência 2" class="card-image">
+                    <div class="card-content">
+                        <h3 class="card-title">Flamengo contrata ala-pivô argentino</h3>
+                        <p class="card-text">O Flamengo anunciou a contratação do ala-pivô argentino Marcos Delía, que estava no San Lorenzo, por duas temporadas.</p>
+                       <!-- Checkbox invisível para controle -->
+        <input type="checkbox" id="read-more-flamengo" class="read-more-toggle">
+        
+        <!-- Conteúdo expandível -->
+        <div class="more-content">
+            <p><strong>Detalhes da contratação:</strong></p>
+            <ul>
+                <li>Contrato até julho de 2026</li>
+                <li>Altura: 2.09m | Idade: 32 anos</li>
+                <li>Média de 12.3 pontos e 6.7 rebotes na Liga Argentino</li>
+                <li>Experiência na EuroLeague (Joventut Badalona)</li>
+            </ul>
+            <p>Delía chega para reforçar o setor interno rubro-negro junto com Olivinha e Balbi. O atleta já está no Rio e fará exames médicos nesta semana.</p>
+        </div>
+        
+        <div class="card-meta">
+            <span><i class="far fa-calendar-alt"></i> 25/05/2024</span>
+            <span><i class="fas fa-exchange-alt"></i> Flamengo</span>
+        </div>
+        
+        <!-- Botão interativo -->
+        <label for="read-more-flamengo" class="read-more">
+            <span class="read-more-text">Ler mais </span>
+            <span class="read-less-text">Ler menos </span>
+            <i class="fas fa-arrow-right"></i>
+        </label>
+    </div>
+</article>
+                
+<article class="card">
+    <img src="imag/edy.jpg" alt="Transferência 3" class="card-image">
+    <div class="card-content">
+        <h3 class="card-title">Real Madrid confirma renovação com Tavares</h3>
+        <p class="card-text">O Real Madrid anunciou a renovação de contrato com o pivô cabo-verdiano Edy Tavares por mais três temporadas.</p>
+        
+        <!-- Checkbox invisível para controle -->
+        <input type="checkbox" id="read-more-tavares" class="read-more-toggle">
+        
+        <!-- Conteúdo expandível -->
+        <div class="more-content">
+            <p><strong>Detalhes da renovação:</strong></p>
+            <ul>
+                <li>Contrato até junho de 2027</li>
+                <li>Cláusula de rescisão de €50 milhões</li>
+                <li>Salário anual estimado em €3.5 milhões</li>
+                <li>Segundo jogador mais valioso do elenco</li>
+            </ul>
+            <p>Tavares, de 2.20m de altura, foi eleito o Melhor Defensor da EuroLeague nas últimas duas temporadas e peça fundamental no bicampeonato europeu do clube.</p>
+        </div>
+        
+        <div class="card-meta">
+            <span><i class="far fa-calendar-alt"></i> 24/05/2024</span>
+            <span><i class="fas fa-exchange-alt"></i> Real Madrid</span>
+        </div>
+        
+        <!-- Botão interativo -->
+        <label for="read-more-tavares" class="read-more">
+            <span class="read-more-text">Ler mais </span>
+            <span class="read-less-text">Ler menos </span>
+            <i class="fas fa-arrow-right"></i>
+        </label>
+    </div>
+</article>
+            </div>
+        </div>
+
+</main>
+  <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Basquetebol Total</h3>
+                <p>Tudo sobre NBA, NBB e as principais ligas de basquete do mundo em um só lugar.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Links Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="jogos.html"><i class="fas fa-basketball-ball"></i> Jogos</a></li>
+                    <li><a href="classificacao.html"><i class="fas fa-trophy"></i> Classificação</a></li>
+                    <li><a href="noticias.html"><i class="far fa-newspaper"></i> Notícias</a></li>
+                    <li><a href="estatistica.html"><i class="fas fa-chart-bar"></i> Estatísticas</a></li>
+                    <li><a href="transferências.html"><i class="fas fa-exchange-alt"></i> Transferências</a></li>
+                </ul>
+            </div>
+             <div class="footer-column">
+                <h3>Times</h3>
+                <ul class="footer-links">
+                    <li><a href="Times-da-NBA.html">Times da NBA</a></li>
+                    <li><a href="Times-do-NBB.html">Times do NBB</a></li>
+                    <li><a href="Times-europeus.html">Times Europeus</a></li>
+                </ul>
+            </div>
+          <div class="footer-column">
+                <h3>Newsletter</h3>
+                <p>Assine nossa newsletter e receba as últimas notícias do mundo do basquete diretamente no seu e-mail.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail" required>
+                    <button type="submit" class="btn-submit">Assinar</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Basquetebol Total. Todos os direitos reservados.</p>
+        </div>
+  </footer>
+</body>
+</html>
